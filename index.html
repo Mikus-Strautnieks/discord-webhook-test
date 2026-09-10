@@ -117,8 +117,10 @@
                     })
                 });
 
+                
                 if (!response.ok) {
-                    throw new Error("request failed");
+                    const errorText = await response.text();
+                    throw new Error(errorText);
                 }
 
                 status.textContent = "sent";
